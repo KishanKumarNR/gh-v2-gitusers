@@ -10,6 +10,7 @@ import {UserService} from "../../user.service";
 export class UserSingleComponent implements OnInit {
   username;
   userRepos;
+  user;
   constructor(private route: ActivatedRoute, private userService: UserService) { }
 
   ngOnInit() {
@@ -19,6 +20,9 @@ export class UserSingleComponent implements OnInit {
       this.userService
         .getUserRepos(this.username)
         .subscribe(userRepos => this.userRepos = userRepos);
+      this.userService
+        .getUser(this.username)
+        .subscribe(user => this.user = user);
       // now we can go grab user data from github
     })
   }

@@ -1,9 +1,18 @@
 <section class="section">
   <div class="container">
+      <div class="container">
 
+        <div class="card" *ngIf="user">
+          <img [src]="user.avatar_url">
+          <h2>Name: {{ user.login }}</h2>
+        </div>
+
+      </div>
+    <section>
+    <strong><em>Repositories</em></strong>
     <div class="card" *ngFor="let repo of userRepos; let i = index">
-      <h2>{{i}} {{ repo.url }}</h2>
+      <a>{{i}}). {{ repo.url }}</a>
     </div>
-
+    </section>
   </div>
 </section>
