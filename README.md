@@ -1,6 +1,10 @@
 # Gitusers
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+This project is hosted @ https://kishankumarnr.github.io/gh-v2-gitusers/ 
+
+## installation
+
+npm install
 
 ## Development server
 
