@@ -1,0 +1,9 @@
+<section class="section">
+  <div class="container">
+
+    <div class="card" *ngFor="let repo of userRepos; let i = index">
+      <h2>{{i}} {{ repo.url }}</h2>
+    </div>
+
+  </div>
+</section>
